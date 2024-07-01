@@ -22,6 +22,7 @@ import debug_toolbar
 
 
 urlpatterns = [
+    path('', include('register.urls')),
     path('admin/', admin.site.urls),
     path('playground/', include('playground.urls')),
     path('register/', include('register.urls')),
